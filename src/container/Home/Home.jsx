@@ -60,7 +60,7 @@ class Home extends Component {
                 </div> */}
                 <Fragment>
                     <div className="navigation">
-                        <Link to="/">Blog Post</Link>
+                        <Link to="/">Blog Post cuy</Link>
                         <Link to="/product">Product</Link>
                         <Link to="/lifecycle">Lifecycle</Link>
                     </div>
