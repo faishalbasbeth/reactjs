@@ -7,6 +7,7 @@ import LifeCycleComp from '../pages/LifeCycleComp/LifeCycleComp';
 import BlogPost from '../pages/BlogPost/BlogPost';
 import Product from '../pages/Product/Product';
 import YoutubeCompPage from '../pages/YoutubeCompPage/YoutubeCompPage';
+import DetailPost from '../pages/BlogPost/DetailPost/DetailPost';
 
 //style
 import './Home.css';
@@ -71,6 +72,7 @@ class Home extends Component {
                         <Link to="/youtube-component">Youtube</Link>
                     </div>
                     <Route path="/" exact component={BlogPost} />
+                    <Route path="/detail-post/:postID" component={DetailPost} />
                     <Route path="/product" component={Product} />
                     <Route path="/lifecycle" component={LifeCycleComp} />
                     <Route path="/youtube-component" component={YoutubeCompPage} />

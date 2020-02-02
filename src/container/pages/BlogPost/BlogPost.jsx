@@ -91,6 +91,10 @@ class BlogPost extends Component {
         }
     }
 
+    handleDetail = (id) => {
+        this.props.history.push(`/detail-post/${id}`);
+    }
+
     componentDidMount(){
         // fetch('http://jsonplaceholder.typicode.com/posts')
         // .then(response => response.json())
@@ -117,7 +121,7 @@ class BlogPost extends Component {
                 </div>
                 {
                     this.state.post.map(post => {
-                        return <Post key={post.id} data={post} remove={this.handleRemove} update={this.handleUpdate}/>
+                        return <Post key={post.id} data={post} remove={this.handleRemove} update={this.handleUpdate} goDetail={this.handleDetail}/>
                     })
                 }
             </Fragment>
