@@ -1,3 +1,7 @@
+.img-size {
+    width: 400px;
+}
+
 .header {
     background: #68c936;
     display: flex;
